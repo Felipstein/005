@@ -8,10 +8,16 @@ export type TextProps<As extends TextType> = ComponentProps<As> & {
   as?: As;
 };
 
-// @ts-expect-error
-export function Text<As extends TextType>({ as = 'p', className, ...props }: TextProps<As>) {
+export function Text<As extends TextType>({
+  // @ts-expect-error
+  as = 'p',
+  className,
+  ...props
+}: TextProps<As>) {
   const Component = as;
 
-  // @ts-expect-error
-  return <Component className={w('text-zinc-400 text-sm', className)} {...props} />;
+  return (
+    // @ts-expect-error
+    <Component className={w('text-zinc-400 text-sm', className)} {...props} />
+  );
 }

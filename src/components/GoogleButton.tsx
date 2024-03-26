@@ -4,14 +4,27 @@ import { Button, ButtonProps } from './Button';
 
 export type GoogleButtonProps = ButtonProps;
 
-export function GoogleButton({ className, children, ...props }: GoogleButtonProps) {
+export function GoogleButton({
+  className,
+  children,
+  ...props
+}: GoogleButtonProps) {
   return (
-    // @ts-expect-error
     <Button
-      className={w('bg-zinc-800 text-white hover:bg-zinc-700 flex items-center justify-center gap-2', className)}
+      className={w(
+        'bg-zinc-800 text-white hover:bg-zinc-700 flex items-center justify-center gap-2',
+        className,
+      )}
       {...props}
     >
-      <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 48 48">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        x="0px"
+        y="0px"
+        width="24"
+        height="24"
+        viewBox="0 0 48 48"
+      >
         <linearGradient
           id="AqtO5BvxUNucZJMaVoULta_ijji5YlQFGxd_gr1"
           x1="-5.978"
