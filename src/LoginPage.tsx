@@ -9,7 +9,7 @@ import { Input } from './components/Input';
 import { LinkButton } from './components/LinkButton';
 import { Separator } from './components/Separator';
 import { Text } from './components/Text';
-import { fakeSubmit } from './utils';
+import { fakeSubmit } from './utils'
 
 const loginFormSchema = z.object({
   email: z.string().email('E-mail inválido'),
