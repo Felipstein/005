@@ -3,7 +3,8 @@ import { twMerge } from 'tailwind-merge';
 
 export const w = (...inputs: ClassValue[]) => twMerge(clsx(...inputs));
 
-export const wait = (ms = 1000) => new Promise((resolve) => setTimeout(resolve, ms));
+export const wait = (ms = 1000) =>
+  new Promise((resolve) => setTimeout(resolve, ms));
 
 export async function fakeSubmit(data: any) {
   const min = 750;

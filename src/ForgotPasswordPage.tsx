@@ -34,7 +34,8 @@ export function ForgotPasswordPage() {
       <Heading className="mt-3">Recuperar conta</Heading>
 
       <Text className="mt-1">
-        Informe o e-mail da sua conta para te enviarmos um e-mail com as instruções de recuperação da sua conta.
+        Informe o e-mail da sua conta para te enviarmos um e-mail com as
+        instruções de recuperação da sua conta.
       </Text>
 
       <Input

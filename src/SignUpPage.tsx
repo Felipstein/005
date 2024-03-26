@@ -13,7 +13,9 @@ import { fakeSubmit } from './utils';
 
 const signUpFormSchema = z.object({
   firstName: z.string().min(3, 'O nome deve conter pelo menos 3 caracteres'),
-  lastName: z.string().min(3, 'O sobrenome deve conter pelo menos 3 caracteres'),
+  lastName: z
+    .string()
+    .min(3, 'O sobrenome deve conter pelo menos 3 caracteres'),
   email: z.string().email('E-mail inválido'),
   password: z.string().min(8, 'A senha deve conter pelo menos 8 caracteres'),
 });
@@ -30,12 +32,19 @@ export function SignUpPage() {
   });
 
   return (
-    <form noValidate className="max-w-3xl w-full" onSubmit={handleSubmit(fakeSubmit)}>
+    <form
+      noValidate
+      className="max-w-3xl w-full"
+      onSubmit={handleSubmit(fakeSubmit)}
+    >
       <Heading className="font-semibold text-xl">Cadastre-se</Heading>
 
       <Text className="mt-2">
         Já tem uma conta?{' '}
-        <LinkButton to="/" className="inline font-semibold text-zinc-300 hover:underline">
+        <LinkButton
+          to="/"
+          className="inline font-semibold text-zinc-300 hover:underline"
+        >
           Clique aqui para entrar
         </LinkButton>
         !
@@ -89,7 +98,9 @@ export function SignUpPage() {
 
       <Separator className="my-10" label="ou" />
 
-      <GoogleButton disabled={isSubmitting}>Cadastrar com o Google</GoogleButton>
+      <GoogleButton disabled={isSubmitting}>
+        Cadastrar com o Google
+      </GoogleButton>
     </form>
   );
 }

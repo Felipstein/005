@@ -28,12 +28,19 @@ export function LoginPage() {
   });
 
   return (
-    <form noValidate onSubmit={handleSubmit(fakeSubmit)} className="max-w-xl w-full">
+    <form
+      noValidate
+      onSubmit={handleSubmit(fakeSubmit)}
+      className="max-w-xl w-full"
+    >
       <Heading className="font-semibold text-xl">Acesse a sua conta</Heading>
 
       <Text className="mt-2">
         Ainda não é cadastrado?{' '}
-        <LinkButton to="/sign-up" className="inline font-semibold text-zinc-300 hover:underline">
+        <LinkButton
+          to="/sign-up"
+          className="inline font-semibold text-zinc-300 hover:underline"
+        >
           Cadastre-se
         </LinkButton>
         .

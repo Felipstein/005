@@ -7,6 +7,7 @@
         "semi": true,
         "singleQuote": true
       }
-    ]
+    ],
+    "@typescript-eslint/no-explicit-any": "off"
   }
 }
