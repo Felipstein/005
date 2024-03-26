@@ -24,7 +24,7 @@
     "zod": "^3.22.4"
   },
   "devDependencies": {
-    "@felipstein/eslint-config-react": "^1.1.2",
+    "@rocketseat/eslint-config": "^2.2.2",
     "@types/react": "^18.2.43",
     "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.14.0",
@@ -33,11 +33,11 @@
     "autoprefixer": "^10.4.16",
     "eslint": "^8.56.0",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^8.0.0",
     "lint-staged": "^15.2.2",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
     "typescript": "^5.2.2",
-    "vite": "^5.0.8",
-    "husky": "^8.0.0"
+    "vite": "^5.0.8"
   }
 }

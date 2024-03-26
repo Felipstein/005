@@ -1,13 +1,12 @@
 {
-  "extends": "@felipstein/eslint-config-react",
+  "extends": "@rocketseat/eslint-config/react",
   "rules": {
-    "import/no-extraneous-dependencies": "off",
-    "jsx-a11y/label-has-associated-control": "off",
-    "jsx-a11y/control-has-associated-label": "off",
-    "react/require-default-props": "off",
-    "jsx-a11y/heading-has-content": "off",
-    "no-promise-executor-return": "off",
-    "react/button-has-type": "off",
-    "no-empty-function": "off"
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": true,
+        "singleQuote": true
+      }
+    ]
   }
 }
