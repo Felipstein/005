@@ -17,18 +17,18 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18.x'
-          cache: 'pnpm'
+          cache: 'yarn'
 
       - run: npm pkg delete scripts.prepare
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: yarn install --frozen-lockfile
 
       - name: Linting
-        run: pnpm ci:lint
+        run: yarn ci:lint
 
       - name: Typechecking
-        run: pnpm typecheck
+        run: yarn typecheck
 
       - name: Tests
-        run: pnpm test:ci
+        run: yarn test:ci

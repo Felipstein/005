@@ -1,11 +1,6 @@
 {
   "extends": "@felipstein/eslint-config-react",
-  "plugins": ["react-refresh"],
   "rules": {
-    "react-refresh/only-export-components": [
-      "warn",
-      { "allowConstantExport": true }
-    ],
     "import/no-extraneous-dependencies": "off",
     "jsx-a11y/label-has-associated-control": "off",
     "jsx-a11y/control-has-associated-label": "off",
